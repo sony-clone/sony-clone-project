@@ -1,0 +1,42 @@
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  height: 300px;
+  background-image: url('https://sonyglobal.scene7.com/is/image/gwtprod/cdd0ad7f507ba29f68f7145255beb66b?fmt=jpeg&wid=2000');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+
+}
+
+
+.banner-text-1 {
+  font-size: 12px;
+
+}
+
+
+.banner-text-2 {
+  font-size: 24px;
+
+}
+
+
+header {
+  width: 100%;
+  height: 115px;
+  background-color: #E4E7EB;
+}
+
+
+
+.filter-header {
+  width: 100%;
+  height: 96px;
+  background-color: white;
+
+}

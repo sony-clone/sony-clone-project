@@ -1,0 +1,28 @@
+{
+  "name": "sony-clone-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sony-clone/sony-clone-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sony-clone/sony-clone-project/issues"
+  },
+  "homepage": "https://github.com/sony-clone/sony-clone-project#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "gulp-sass": "^3.1.0",
+    "massive": "^3.1.0"
+  }
+}
