@@ -1,0 +1,141 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.main-footer-container {
+  width: 100%;
+  height: 510px; }
+
+.footer-top {
+  width: 100%;
+  height: 402px;
+  background-color: #1F2024;
+  border-bottom: 1px #3C3C42 solid; }
+
+.footer-bottom {
+  width: 100%;
+  height: 108px;
+  background-color: #1F2024; }
+
+.gray-footer-text {
+  font-size: 8.5px;
+  color: gray;
+  letter-spacing: 1.4px;
+  margin-left: 12.5%; }
+
+.white-footer-text {
+  font-size: 8.5px;
+  color: white;
+  letter-spacing: 1.4px;
+  margin-left: 12.5%; }
+
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  background-image: url("https://sonyglobal.scene7.com/is/image/gwtprod/cdd0ad7f507ba29f68f7145255beb66b?fmt=jpeg&wid=2000");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white; }
+  .banner .banner-text-1 {
+    font-size: 12px; }
+  .banner .banner-text-2 {
+    font-size: 24px; }
+
+header {
+  width: 100%;
+  height: 115px;
+  background-color: #E4E7EB; }
+
+.filter-header {
+  width: 100%;
+  height: 96px;
+  background-color: white; }
+
+.products-container {
+  width: 100%;
+  height: 1000px;
+  background-color: #4135B0; }
+  .products-container .individual-products-container {
+    display: flex;
+    flex-direction: column;
+    width: 378px;
+    height: 976px; }
+    .products-container .individual-products-container .individual-products-top {
+      width: 100%;
+      height: 320px;
+      background-color: #F1F4F9; }
+      .products-container .individual-products-container .individual-products-top .ip-top-top {
+        width: 100%;
+        height: 78px;
+        padding-left: 10px;
+        padding-top: 28px; }
+        .products-container .individual-products-container .individual-products-top .ip-top-top img {
+          width: 31px;
+          height: 32px; }
+      .products-container .individual-products-container .individual-products-top .ip-top-middle {
+        display: flex;
+        width: 100%;
+        height: 210px; }
+      .products-container .individual-products-container .individual-products-top .ip-top-bottom {
+        display: flex;
+        width: 100%;
+        height: img; }
+    .products-container .individual-products-container .individual-products-middle {
+      width: 100%;
+      height: 266px;
+      background-color: gray; }
+    .products-container .individual-products-container .individual-products-bottom {
+      width: 100%;
+      height: 389px;
+      background-color: gray; }
+
+/*# sourceMappingURL=maps/bundle.css.map */
