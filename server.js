@@ -19,8 +19,14 @@ massive({
 
 const mainCtrl = require('./mainCtrl');
 
-app.get('/api/products', mainCtrl.getProducts);
+//---users-----
+app.get('/api/users', mainCtrl.getUsers);
 
+
+//---products------
+app.get('/api/products', mainCtrl.getProducts);
+app.get('/api/camcorders', mainCtrl.getCamcorders);
+app.get('/api/hometheaters', mainCtrl.getHometheaters);
 
 })
 
