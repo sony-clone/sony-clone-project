@@ -20,9 +20,6 @@ angular.module("sonyApp", ['ui.router']).config(["$stateProvider", "$urlRouterPr
 "use strict";
 "use strict";
 "use strict";
-"use strict";
-"use strict";
-"use strict";
 
 angular.module("sonyApp").controller('single-productsCtrl', ["$scope", "$stateParams", function ($scope, $stateParams) {
 
@@ -41,4 +38,7 @@ angular.module("sonyApp").controller('single-productsCtrl', ["$scope", "$statePa
         //         }
     };
 }]);
+"use strict";
+"use strict";
+"use strict";
 //# sourceMappingURL=maps/bundle.js.map
