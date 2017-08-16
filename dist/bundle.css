@@ -32,9 +32,6 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1; }
 
-ol, ul {
-  list-style: none; }
-
 blockquote, q {
   quotes: none; }
 
@@ -81,9 +78,10 @@ table {
   justify-content: center;
   width: 100%;
   height: 300px;
-  background-image: url("https://sonyglobal.scene7.com/is/image/gwtprod/cdd0ad7f507ba29f68f7145255beb66b?fmt=jpeg&wid=2000");
+  background-image: url("/images/tv-banner.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: auto 300px;
   color: white; }
   .banner .banner-text-1 {
     font-size: 12px; }
@@ -103,12 +101,14 @@ header {
 .products-container {
   width: 100%;
   height: 1000px;
-  background-color: #4135B0; }
+  background-color: white; }
   .products-container .individual-products-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 378px;
-    height: 976px; }
+    height: 976px;
+    margin-left: 575px; }
     .products-container .individual-products-container .individual-products-top {
       width: 100%;
       height: 320px;
@@ -123,19 +123,232 @@ header {
           height: 32px; }
       .products-container .individual-products-container .individual-products-top .ip-top-middle {
         display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         height: 210px; }
+        .products-container .individual-products-container .individual-products-top .ip-top-middle img {
+          width: 90%;
+          height: 190px; }
       .products-container .individual-products-container .individual-products-top .ip-top-bottom {
         display: flex;
+        align-items: center;
         width: 100%;
-        height: img; }
-    .products-container .individual-products-container .individual-products-middle {
-      width: 100%;
-      height: 266px;
-      background-color: gray; }
+        height: 32px;
+        padding-left: 10px; }
+        .products-container .individual-products-container .individual-products-top .ip-top-bottom i {
+          font-size: 13px;
+          color: #D2D2DB; }
     .products-container .individual-products-container .individual-products-bottom {
+      display: flex;
+      flex-direction: column;
       width: 100%;
-      height: 389px;
-      background-color: gray; }
+      height: 654px;
+      background-color: white;
+      border: 1px solid #E4E7EB; }
+      .products-container .individual-products-container .individual-products-bottom .ip-bottom-a {
+        width: 100%;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: .6px;
+        word-wrap: break-word;
+        color: #2f353d;
+        padding-left: 10px; }
+      .products-container .individual-products-container .individual-products-bottom .ip-bottom-b {
+        display: flex;
+        padding-left: 10px;
+        color: #F25529;
+        padding-right: 45px; }
+        .products-container .individual-products-container .individual-products-bottom .ip-bottom-b i {
+          font-size: 13px;
+          letter-spacing: 1.5px; }
+      .products-container .individual-products-container .individual-products-bottom .ip-bottom-c {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        padding-left: 22px;
+        padding-top: 12px;
+        color: #83838f;
+        line-height: 24px;
+        font-weight: 400; }
+      .products-container .individual-products-container .individual-products-bottom .ip-bottom-d {
+        padding-top: 58px;
+        padding-left: 8px; }
+      .products-container .individual-products-container .individual-products-bottom .ip-bottom-e {
+        font-size: 11px;
+        letter-spacing: 1.2px;
+        padding-top: 26px;
+        padding-left: 10px;
+        color: #83838f; }
+      .products-container .individual-products-container .individual-products-bottom .ip-bottom-f {
+        padding-top: 10px;
+        padding-left: 10px; }
+        .products-container .individual-products-container .individual-products-bottom .ip-bottom-f button {
+          height: 34px;
+          width: 97%;
+          color: white;
+          background-color: #2f353d;
+          border: none;
+          font-size: 12px; }
+      .products-container .individual-products-container .individual-products-bottom .ip-bottom-g {
+        padding-top: 10px;
+        padding-left: 10px; }
+        .products-container .individual-products-container .individual-products-bottom .ip-bottom-g button {
+          height: 34px;
+          width: 97%;
+          color: #83838f;
+          background-color: #f1f5f9;
+          border: none;
+          font-size: 12px; }
+      .products-container .individual-products-container .individual-products-bottom .ip-bottom-h {
+        padding-top: 10px;
+        padding-left: 10px; }
+        .products-container .individual-products-container .individual-products-bottom .ip-bottom-h button {
+          height: 34px;
+          width: 97%;
+          color: #83838f;
+          background-color: #f1f5f9;
+          border: none;
+          font-size: 12px; }
+      .products-container .individual-products-container .individual-products-bottom .ip-bottom-i {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 56px;
+        font-size: 22px;
+        font-weight: 600;
+        padding-right: 14px; }
+      .products-container .individual-products-container .individual-products-bottom .ip-bottom-j {
+        display: flex;
+        justify-content: center;
+        padding-top: 46px;
+        color: #84A2F3;
+        font-size: 14px; }
+      .products-container .individual-products-container .individual-products-bottom .ip-bottom-k {
+        padding-top: 25px;
+        padding-left: 10px; }
+        .products-container .individual-products-container .individual-products-bottom .ip-bottom-k button {
+          height: 44px;
+          width: 97%;
+          color: white;
+          background-color: #f25529;
+          border: none;
+          font-size: 14px; }
+
+* {
+  margin: 0; }
+
+.header {
+  height: 58px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  justify-content: space-between; }
+
+.header2 {
+  background-color: black;
+  color: white; }
+
+.sony {
+  position: absolute;
+  top: 16px;
+  left: 60px;
+  font-weight: bold; }
+
+.Electronics {
+  position: absolute;
+  top: 16px;
+  left: 120px; }
+
+.Playstation {
+  position: absolute;
+  top: 16px;
+  left: 210px; }
+
+.Entertainment {
+  position: absolute;
+  top: 16px;
+  left: 290px; }
+
+.Support {
+  position: absolute;
+  top: 16px;
+  left: 400px; }
+
+.signIn {
+  position: absolute;
+  top: 16px;
+  right: 110px; }
+
+.search {
+  position: absolute;
+  top: 16px;
+  right: 50px;
+  height: 34px;
+  width: 34px;
+  background-color: grey;
+  background-image: url("/images/magnifyingGlass.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(90deg); }
+
+.downArrow {
+  position: absolute;
+  top: 9px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  color: white;
+  border-top: 5px solid grey; }
+
+.mainBackground {
+  background-image: url("mainBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 100%; }
+
+.allElectronics {
+  color: white;
+  position: absolute;
+  top: 120px;
+  left: 30px;
+  font-size: 1.75em; }
+
+.description {
+  color: white;
+  position: absolute;
+  top: 170px;
+  left: 30px;
+  font-size: 15px; }
+
+@media (max-width: 740px) {
+  .hamburger {
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 45px;
+    padding: 5px 15px 0px 15px;
+    color: #999;
+    border: 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 10000000000000; } }
 
 /*# sourceMappingURL=maps/bundle.css.map */
