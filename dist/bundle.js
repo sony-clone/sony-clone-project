@@ -5,18 +5,18 @@ angular.module("sonyApp", ['ui.router']).config(["$stateProvider", "$urlRouterPr
     console.log('lugia left');
     $urlRouterProvider.otherwise('/');
 
-    $stateProvider
-    // .state('home', {
-    //     templateUrl: '',
-    //     controller: 'homeCtrl',
-    //     url: '/'
-    // })
-    .state('electronics', {
+    $stateProvider.state('home', {
+        templateUrl: './views/home.html',
+        url: '/home'
+    }).state('electronics', {
         templateUrl: './views/single-product.html',
         controller: 'single-productsCtrl',
         url: '/electronics/:id'
     });
 }]);
+"use strict";
+"use strict";
+"use strict";
 "use strict";
 "use strict";
 "use strict";
@@ -38,7 +38,4 @@ angular.module("sonyApp").controller('single-productsCtrl', ["$scope", "$statePa
         //         }
     };
 }]);
-"use strict";
-"use strict";
-"use strict";
 //# sourceMappingURL=maps/bundle.js.map
