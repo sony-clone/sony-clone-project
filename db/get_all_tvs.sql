@@ -1,1 +1,2 @@
-SELECT * FROM televisions;
+SELECT * FROM televisions
+JOIN tvDescription ON tvDescription.productid = televisions.id;

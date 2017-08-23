@@ -17,7 +17,7 @@
 <body>
  <div class="header">
    <span class="sony">SONY</span>
-   <span class="Electronics">Electronics<span class="downArrow"></span></span>
+   <span class="Electronics" ng-show="showelectronics">Electronics<span class="downArrow"></span></span>
    <span class="Playstation">Playstation</span>
    <span class="Entertainment">Entertainment<span class="downArrow"></span></span>
    <span class="Support">Support<span class="downArrow"></span></span>
@@ -31,6 +31,10 @@
  
     <ui-view></ui-view>
 
+    <div class="supportDropMenu" ng-mouseenter="showPopover()">
+      <span class="dropMenuSupport">Support</span> <span class="dropMenuRegister">Register a Product</span> <span class="dropMenuCommunity">Community</span>
+      </div>
+     
 
 
   <div class="footer">

@@ -1,1 +1,2 @@
-SELECT * FROM camcorders;
+SELECT * FROM camcorders
+JOIN camcordersDescription ON camcordersDescription.productid = camcorders.id

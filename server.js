@@ -24,9 +24,22 @@ app.get('/api/users', mainCtrl.getUsers);
 
 
 //---products------
-app.get('/api/products', mainCtrl.getProducts);
-app.get('/api/camcorders', mainCtrl.getCamcorders);
+app.get('/api/tvs', mainCtrl.getTvs);
+
 app.get('/api/hometheaters', mainCtrl.getHometheaters);
+
+app.get('/api/projectors', mainCtrl.getProjectors);
+
+app.get('/api/dvdplayers', mainCtrl.getDvdplayers);
+
+app.get('/api/headphones', mainCtrl.getHeadphones);
+
+app.get('/api/cameras', mainCtrl.getCameras);
+
+app.get('/api/cellphones', mainCtrl.getCellphones);
+
+app.get('/api/camcorders', mainCtrl.getCamcorders);
+
 
 })
 

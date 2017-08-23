@@ -1,10 +1,10 @@
-CREATE TABLE htDescription (
+CREATE TABLE hometheaterDescriptions (
  id serial primary key,
  productId INTEGER,
  description TEXT
 );
 
-INSERT INTO htDescription (productId, description)
+INSERT INTO hometheaterDescriptions (productId, description)
 VALUES
 (1, 'S-Force PRO Front Surround'),
 (1, 'Wireless subwoofer with 2-way setup'),
