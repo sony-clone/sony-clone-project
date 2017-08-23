@@ -5,7 +5,15 @@
   <meta charset="utf-8">
       <link rel="stylesheet" href="./bundle.css">
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+      <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
+      <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
 </header>
+<style>
+    body {
+      font-family: 'Asap', sans-serif;
+
+    }
+  </style>
 <body>
  <div class="header">
    <span class="sony">SONY</span>
@@ -18,11 +26,99 @@
    <span class="signIn">Sign In<span class="downArrow"></span></span>
    <span class="search"></span>
  </div>
+
  
-
-
-
+ 
     <ui-view></ui-view>
+
+
+
+  <div class="footer">
+    <div class="footer-top-container">
+      <div class="footer-top-top">
+        <div class="column-1">
+          <h3>Where To Buy</h3>
+          <div>
+            <ul>
+              <li>See Authorized Retailers</li>
+            </ul>
+          </div>
+        </div>
+        <div class="column-2">
+          <h3>Sony Rewards</h3> 
+          <div>
+            <ul>
+              <li>Join Now</li>
+              <li>Learn More</li>
+              <li>Manage Account</li>
+            </ul>
+          </div>   
+        </div>
+        <div class="column-3">
+          <h3>News & Info</h3>
+          <div>
+            <ul>
+              <li>Press Releases</li>
+              <li>About Sony</li>
+              <li>Product Support</li>
+              <li>Press Releases</li>
+              <li>Product Registration</li>
+              <li>Newslettere sign up</li>
+              <li>Accessibility and Usability</li>
+            </ul>
+          </div>    
+        </div>
+        <div class="column-4">
+          <h3>Other Sites</h3>
+          <div>
+             <ul>
+              <li>PlayStation</li>
+              <li>Sony Pictures</li>
+              <li>Sony Music</li>
+              <li>Sony Mobile</li>
+              <li>Crackle</li>
+              <li>Sony Square NYC</li>
+            </ul>
+          </div>  
+        </div>
+      </div>
+      <div class="footer-top-bottom">
+        <div class="footer-top-bottom-left">
+          <div class="flag-container">
+            <img ng-src="/images/flag.gif" alt=""></img>
+            <p>United States</p>
+          </div>
+        </div>
+        <div class="footer-top-bottom-middle">
+          <p>For Professionals</p>
+          <p>Careers</p>
+          <p>Contact Us</p>
+          <p>Company Info</p>
+          <p>Voluntary Recall</p>
+        </div>
+        <div class="footer-top-bottom-right">
+          <div class="social-media-box">
+            <i class="fa fa-facebook" aria-hidden="true"></i> 
+          </div>
+          <div class="social-media-box">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+          <div class="social-media-box">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+          <div class="social-media-box">
+            <i class="fa fa-tumblr" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-container">
+        <p class="top-text">2017 SONY CORPORATION OF AMERICA</p>
+        <p class="bottom-text">TERMS AND CONDITIONS  PRIVACY POLICY/YOUR CALIFORNIA PRIVACY RIGHTS</p>
+    </div>
+  </div>
+  
+  
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0/angular-ui-router.js"></script>
