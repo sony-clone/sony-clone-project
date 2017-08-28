@@ -2,22 +2,21 @@
 <html ng-app="sonyApp">
 
   <title>Consumer Electronics</title>
-<head>
+<header>
   <meta charset="utf-8">
-      <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
       <link rel="stylesheet" href="./bundle.css">
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-      <link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">
       <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
       <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
-</head>
+</header>
 <style>
     body {
       font-family: 'Asap', sans-serif;
 
     }
   </style>
-  <body ng-controller="homeCtrl"> <div class="header">
+<body>
+ <div class="header">
    <span class="sony">SONY</span>
    <span class="Electronics" ng-mouseleave="showElectronics = false" ng-mouseenter="showElectronics = true" ng-init="showElectronics = false">Electronics<span class="downArrow"></span></span>
    <span class="Playstation">Playstation</span>
@@ -29,6 +28,9 @@
    <span class="search"></span>
  </div>
 
+ 
+ 
+    <ui-view></ui-view>
 
     <!-- <div class="supportDropMenu" ng-mouseenter="showPopover()">
       <span class="dropMenuSupport">Support</span> <span class="dropMenuRegister">Register a Product</span> <span class="dropMenuCommunity">Community</span>
@@ -126,7 +128,6 @@
        <span class="support">Support
           <div class="supportBox">3</div>
 
-
       </span>
       <span class="register">Register a Product
           <div class="registerBox">3</div>
@@ -138,7 +139,6 @@
       </span>
      </div>
     <ui-view></ui-view>
-
   <div class="footer">
     <div class="footer-top-container">
       <div class="footer-top-top">
