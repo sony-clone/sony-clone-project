@@ -1,3 +1,3 @@
-angular.module('sonyApp').service.('homeService', function($http) {
+angular.module('sonyApp').service('homeService', function($http) {
     
 })
