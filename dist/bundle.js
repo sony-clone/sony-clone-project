@@ -15,7 +15,17 @@ angular.module("sonyApp", ['ui.router']).config(["$stateProvider", "$urlRouterPr
     });
 }]);
 "use strict";
-"use strict";
+'use strict';
+
+angular.module('sonyApp').controller('homeCtrl', ["$scope", "homeService", function ($scope, homeService) {
+
+    $scope.showPopover = function () {
+        $scope.hidePopover = function () {
+            $scope.popoverIsVisable = !$scope.popoverIsVisible;
+        };
+        $scope.popoverIsVisable = false;
+    };
+}]);
 "use strict";
 "use strict";
 "use strict";
@@ -38,4 +48,9 @@ angular.module("sonyApp").controller('single-productsCtrl', ["$scope", "$statePa
         //         }
     };
 }]);
+"use strict";
+'use strict';
+
+angular.module('sonyApp').service('homeService', ["$http", function ($http) {}]);
+"use strict";
 //# sourceMappingURL=maps/bundle.js.map
