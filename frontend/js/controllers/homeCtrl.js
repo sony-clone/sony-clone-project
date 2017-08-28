@@ -1,4 +1,4 @@
-angular.module('sonyApp').controller('homeCtrl', fucntion($scope, homeService){
+angular.module('sonyApp').controller('homeCtrl', function($scope, homeService){
 
 
     $scope.showPopover = function(){

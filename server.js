@@ -6,7 +6,7 @@ const app = express();
 const PORT = 3000;
 
 app.use(bodyParser.json())
-
+app.use(express.static("./dist"))
 massive({
   ssl: true,
   host: 'ec2-23-23-221-255.compute-1.amazonaws.com',

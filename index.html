@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html ng-app="sonyApp">
-<<<<<<< HEAD
+
   <title>Consumer Electronics</title>
 <header>
   <meta charset="utf-8">
-      <link rel="stylesheet" type="text/css" href="styles.css">
+      <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
       <link rel="stylesheet" href="./bundle.css">
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+      <link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">
 </header>
 <body>
  <div class="header">
    <span class="sony">SONY</span>
-   <span class="Electronics" ng-show="showelectronics">Electronics<span class="downArrow"></span></span>
+   <span class="Electronics" ng-mouseleave="showElectronics = false" ng-mouseenter="showElectronics = true" ng-init="showElectronics = false">Electronics<span class="downArrow"></span></span>
    <span class="Playstation">Playstation</span>
-   <span class="Entertainment">Entertainment<span class="downArrow"></span></span>
-   <span class="Support">Support<span class="downArrow"></span></span>
+   <span class="Entertainment" ng-mouseleave="showEntertainment = false" ng-mouseenter="showEntertainment = true" ng-init="showEntertainment = false">Entertainment<span class="downArrow"></span></span>
+   <span class="Support" ng-mouseleave="showSupport = false" ng-mouseenter="showSupport = true" ng-init="showSupport = false">Support<span class="downArrow"></span></span>
  </div>
  <div class="header2">
    <span class="signIn">Sign In<span class="downArrow"></span></span>
@@ -22,12 +23,112 @@
  </div>
   <body ng-controller="homeCtrl">
 
-    <div class="supportDropMenu" ng-mouseenter="showPopover()">
+    <!-- <div class="supportDropMenu" ng-mouseenter="showPopover()">
       <span class="dropMenuSupport">Support</span> <span class="dropMenuRegister">Register a Product</span> <span class="dropMenuCommunity">Community</span>
+      </div> -->
+<!-- <div ng-model="hover" ng-init="hover=false">
+  <div ng-if="hover" class="animate-if"> -->
+      <div class="ELECdropDownContainer" ng-show="showElectronics">
+        <div class="televisionshometheaters">
+          <ul class=""><p id="title">Televisions</p>
+            <li>Televisions</li>
+            <li>Home Theater & Sound Bars</li>
+            <li>Projectors</li>
+            <li>Blu-ray & DVD Players</li>
+          </ul></br>
+            <p id="viewAll">View All</p>
+          </div>
+
+          <div class="audio">
+            <ul class=""><p id="title">Audio</p>
+              <li>Headphones</li>
+              <li>MP3 Players</li>
+              <li>Wireless Speakers</li>
+              <li>High-Resolution Audio</li>
+            </ul></br>
+            <p id="viewAll">View All</p>
+          </div>
+
+          <div class="cameras">
+          <ul class=""><p id="title">Cameras</p>
+            <li>Interchangeable-lens Cameras</li>
+            <li>Lenses</li>
+            <li>Compact Cameras</li>
+            <li>Lens-Style Cameras</li>
+          </ul></br>
+          <p id="viewAll">View All</p>
+          </div>
+        
+          <div class="mobileDevices">
+          <ul class=""><p id="title">Mobile Devices</p>
+            <li>Cell Phones</li>
+            <li>Tablets</li>
+            <li>Wearable Technology</li>
+            <li>Digital Paper</li>
+          </ul></br>
+          <p id="viewAll">View All</p>
+          </div>
+              <!-- <div class="ELECdropDownBottom">  -->
+              <div class="videoCamera">
+               <ul class=""><p id="title">Video Cameras</p>
+                 <li>Camcorders</li>
+                 <li>Action Cameras</li>
+                 <li>Music Video Recorders</li>
+                 <li>Profesional Camcorders</li>
+               </ul></br>
+                  <p id="viewAll">View All</p>
+              </div>
+              <div class="car">
+               <ul class=""><p id="title">Car and Marine</p>
+                 <li>In-Car Recievers & Players</li>
+                 <li>In-Car Speakers & Ampliphiers</li>
+                 <li>Marine Audio</li>
+                 <li>Automotive OEM Audio</li>
+               </ul>  </br>
+                  <p id="viewAll">View All</p>              
+              </div>
+              <div class="energystorage">
+               <ul class=""><p id="title">Energy, Storage & Cables</p>
+                 <li>Batteries</li>
+                 <li>Memory Cards & Flash Drives</li>
+                 <li>Cables</li>
+               </ul></br>
+                  <p id="viewAll">View All</p>                
+              </div>
+              <!-- </div>  -->
       </div>
-     
+
+      <!-- <h1>{{count}}</h1> -->
 
 
+                
+       
+
+     </div>
+     <div class="entertainmentDropMenu" ng-show="showEntertainment">
+       <div class="entertainmentLeft">
+         <span class="videoGames">Video Games</span>
+         <span class="movies">Movies & TV Shows</span>
+         <span class="music">Music</span>
+       </div>
+        <div class="phone+tabletApps"> 
+          Phone and Tablet Apps</br> The best of what Sony has to offer on iOS or Android. </br><p>Download our Apps</p>
+        </div>
+     </div>
+     <div class="supportDropMenu" nng-show="showSupport">
+       <span class="support">Support
+          <div class="supportBox">3</div>
+
+      </span>
+      <span class="register">Register a Product
+          <div class="registerBox">3</div>
+
+      </span>
+      <span class="community">Community
+          <div class="comminutyBox">3</div>
+
+      </span>
+     </div>
     <ui-view></ui-view>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
