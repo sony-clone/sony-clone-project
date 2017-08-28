@@ -5,11 +5,10 @@ console.log('lugia left')
         $urlRouterProvider.otherwise('/');
 
         $stateProvider
-            // .state('home', {
-            //     templateUrl: '',
-            //     controller: 'homeCtrl',
-            //     url: '/'
-            // })
+            .state('home', {
+                templateUrl: './views/home.html',
+                url: '/home'
+            })
             .state('electronics', {
                 templateUrl: './views/single-product.html',
                 controller: 'single-productsCtrl',

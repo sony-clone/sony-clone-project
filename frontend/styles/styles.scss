@@ -51,7 +51,7 @@
   height: 34px;
   width: 34px;
   background-color: grey;
-  background-image: url('magnifyingGlass.png');
+  background-image: url('/images/magnifyingGlass.png');
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -196,6 +196,218 @@ ul {
   color: blue;
   margin-bottom: 15px;
   width: 100px;
+.footer {
+  width: 100%;
+  height: 510px;
+  background-color: #1F2024;
+
+  .footer-top-container { 
+    width: 100%;
+    height: 404px;
+    border-bottom: 1px solid #3C3C42;
+    
+
+    .footer-top-top {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      height: 306px;
+      color: white;
+
+      .column-1 {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        height: 100%;
+        padding-top: 60px;
+
+       
+        
+
+        h3 {
+          color: #83838F;
+          padding-bottom: 26px;
+        }
+
+        ul li {
+          list-style-type: none;
+          padding-bottom: 12px;
+          font-size: 14px;
+        }
+      }
+
+      .column-2 {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        height: 100%;
+        padding-top: 60px;
+
+        
+
+        h3 {
+          color: #83838F;
+          padding-bottom: 26px;
+        }
+
+        ul li {
+          list-style-type: none;
+          padding-bottom: 12px;
+          font-size: 14px;
+        }
+      }
+
+      .column-3 {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        height: 100%;
+        padding-top: 60px;
+        
+        
+        
+
+        h3 {
+          color: #83838F;
+          padding-bottom: 26px;
+        }
+
+        ul li {
+          list-style-type: none;
+          padding-bottom: 12px;
+          font-size: 14px;
+        }
+      }
+
+      .column-4 {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        height: 100%;
+        padding-top: 60px;
+
+        
+
+        h3 {
+          color: #83838F;
+          padding-bottom: 26px;
+        }
+
+        ul li {
+          list-style-type: none;
+          padding-bottom: 12px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .footer-top-bottom {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      height: 98px;
+
+
+      .footer-top-bottom-left {
+        display: flex;
+        align-items: center;
+        width: 40%;
+        height: 100%;
+        padding-left: 164px;
+
+        .flag-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 203px;
+          height: 40px;
+          background-color: #3C3C42; 
+          color: white;
+          
+
+
+          img {
+            width: 20px;
+            height: 15px;
+            
+          }
+          
+          p {
+            padding-left: 12px;
+          }
+        }
+      }
+
+      .footer-top-bottom-middle {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 38%;
+        height: 100%;
+        color: white;
+        padding-right: 10px;
+
+
+        p {
+          padding-right: 16px;
+          font-size: 14px;
+        }
+      }
+
+      .footer-top-bottom-right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 22%;
+        height: 100%;
+        
+
+
+        .social-media-box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 36px;
+          height: 34px;
+          background-color: #3C3C42;
+          margin-left: 3px;
+         
+
+          i {
+            font-size: 18px;
+            color: white;
+            
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom-container {
+    width: 100%;
+    height: 106px;
+    padding-top: 36px;
+
+
+    .top-text {
+      color: #83838F;
+      font-size: 10px;
+      padding-left: 164px;
+      letter-spacing: 1.2px;
+    }
+
+    .bottom-text {
+      color: white;
+      font-size: 10px;
+      padding-top: 8px;
+      padding-left: 164px;
+      letter-spacing: 1.2px;
+      line-height: 14px;
+    }
+  }
 }
 
 @media (max-width: 740px) {
@@ -215,5 +427,3 @@ ul {
   z-index:10000000000000;
   }
 }
-
-
