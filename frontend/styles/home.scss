@@ -1,8 +1,26 @@
-.main-home-container {
+.home-banner {
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 300px;
+    background-image: url('/images/home-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 300px;
+    background-color: #ACACB6;
+}
+
+
+.main-home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     background-color: white;
+
+
+    
 
     .home-container {
         display: flex;
