@@ -7,11 +7,9 @@
   background-color: rgb(0,0,0);
   color: white;
   justify-content: space-between;
+  padding-left: 10px;
 }
-.header2 {
-  background-color: rgb(0,0,0);
-  color: white;
-}
+
 .sony {
   position: absolute;
   top: 16px;
@@ -25,18 +23,20 @@
 }
 .Playstation {
   position: absolute;
-  top: 16px;
-  left: 210px;
+  top: 8px;
+  left: 111px;
+  color: white !important;
+  text-decoration: none;
 }
 .Entertainment {
   position: absolute;
   top: 16px;
-  left: 290px;
+  left: 310px;
 }
 .Support {
   position: absolute;
   top: 16px;
-  left: 400px;
+  left: 435px;
 }
 .signIn {
   position: absolute;
@@ -97,30 +97,37 @@ border-top: 5px solid grey;
 
 .ELECdropDownContainer{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 80%;
+  // height: 900px;  
+  margin: auto;
+  z-index: 10;
+}
+.ELECdropDownTop, 
+.ELECdropDownBottom {
+  display: flex;
   justify-content: space-between;
-  width: 60%;
-  height: 900px;  
+  width: 80%;
+  height: 400px;  
   margin: auto;
 }
-
-// .ELECdropDownBottom {
-//   display: flex;
-//   justify-content: space-between;
-//   width: 80%;
-//   height: 400px;  
-//   margin: auto;
-// }
 ul {
-   list-style-image: url('rightcheverons.png'); 
+   list-style-image: url('images/rightcheverons.png'); 
    margin-bottom: 5px;  
 }
   li {
     margin-bottom: 10px;
   }
 .audio,
+.car,
+.energystorage,
+
 .cameras,
 .mobileDevices,
-.videoCameras,
+.videoCamera,
 .videoGames,
 .phonetabletApps,
 .supportDropMenu,
@@ -129,15 +136,56 @@ ul {
   // float: left;
   height: 200px;
   position: relative;
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+ }
+//  .ELECdropDownBottom {
+//    position: absolute;
+//    left: 0px;
+//    top: 100px;
+//  }
+ .entertainmentDropMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 80%;
+  // height: 900px;  
+  margin: auto;
+  z-index: 10;
+ }
+ .entertainmentLeft,
+ .entertainmentRight{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 400px;  
+    margin: auto;
+ }
+
+ .videoGames,
+ .movies,
+ .music {
+  width: 30%;
+  // float: left;
+  height: 150px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+ }
+ .funImage {
+   height: 100px;
+   width: 100px;
  }
  .supportDropMenu{
   // display: relative;
-  justify-content: space-between;
+  // justify-content: center;
   width: 70%;
   // height: 900px;  
-  margin-left: auto;
+  margin: auto;
   
   // text-align: center;
 }
@@ -145,12 +193,15 @@ ul {
  .register, 
  .community {
   width: 30%;
+  display: flex;
+  flex-direction: column;
   // float: left;
   height: 200px;
-  position: relative;
+  // position: relative;
   // display: inline-flex;
   // flex-direction: row;
   text-align: center;
+  align-content: center;
  }
  .supportBox,
  .registerBox,
@@ -158,6 +209,13 @@ ul {
  height: 61px;
  width: 112px;
  background-color: grey;
+
+  img{
+    height: 90px;
+    width:auto;
+    display: block;
+    margin: auto;
+    }
  }
 // .audio {
 //   width: 200px;
@@ -196,6 +254,7 @@ ul {
   color: blue;
   margin-bottom: 15px;
   width: 100px;
+}
 .footer {
   width: 100%;
   height: 510px;
@@ -406,25 +465,7 @@ ul {
       padding-left: 164px;
       letter-spacing: 1.2px;
       line-height: 14px;
+      }
     }
   }
-}
 
-@media (max-width: 740px) {
-  .hamburger {
-    background:none;
-  position:absolute;
-  top:0;
-  right:0;
-  line-height:45px;
-  padding:5px 15px 0px 15px;
-  color:#999;
-  border:0;
-  font-size:1.4em;
-  font-weight:bold;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
-    }
-  }
-}

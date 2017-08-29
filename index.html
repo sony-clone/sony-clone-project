@@ -18,10 +18,10 @@
 <body>
  <div class="header">
    <span class="sony">SONY</span>
-   <span class="Electronics" ng-mouseleave="showElectronics = false" ng-mouseenter="showElectronics = true" ng-init="showElectronics = false">Electronics<span class="downArrow"></span></span>
-   <span class="Playstation">Playstation</span>
-   <span class="Entertainment" ng-mouseleave="showEntertainment = false" ng-mouseenter="showEntertainment = true" ng-init="showEntertainment = false">Entertainment<span class="downArrow"></span></span>
-   <span class="Support" ng-mouseleave="showSupport = false" ng-mouseenter="showSupport = true" ng-init="showSupport = false">Support<span class="downArrow"></span></span>
+   <span class="Electronics"  ng-mouseenter="showElectronics = true" ng-init="showElectronics = false">Electronics<span class="downArrow"></span></span>
+   <span class="Playstation" ><a class="Playstation"href="https://www.sony.com/electronics/playstation">Playstation</a></span>
+   <span class="Entertainment"  ng-mouseenter="showEntertainment = true" ng-init="showEntertainment = false">Entertainment<span class="downArrow"></span></span>
+   <span class="Support"  ng-mouseenter="showSupport = true" ng-init="showSupport = false">Support<span class="downArrow"></span></span>
  </div>
  <div class="header2">
    <span class="signIn">Sign In<span class="downArrow"></span></span>
@@ -30,111 +30,115 @@
 
  
  
-    <ui-view></ui-view>
+
 
     <!-- <div class="supportDropMenu" ng-mouseenter="showPopover()">
       <span class="dropMenuSupport">Support</span> <span class="dropMenuRegister">Register a Product</span> <span class="dropMenuCommunity">Community</span>
       </div> -->
 <!-- <div ng-model="hover" ng-init="hover=false">
   <div ng-if="hover" class="animate-if"> -->
-      <div class="ELECdropDownContainer" ng-show="showElectronics">
-        <div class="televisionshometheaters">
-          <ul class=""><p id="title">Televisions</p>
-            <li>Televisions</li>
-            <li>Home Theater & Sound Bars</li>
-            <li>Projectors</li>
-            <li>Blu-ray & DVD Players</li>
-          </ul></br>
-            <p id="viewAll">View All</p>
-          </div>
-
-          <div class="audio">
-            <ul class=""><p id="title">Audio</p>
-              <li>Headphones</li>
-              <li>MP3 Players</li>
-              <li>Wireless Speakers</li>
-              <li>High-Resolution Audio</li>
-            </ul></br>
-            <p id="viewAll">View All</p>
-          </div>
-
-          <div class="cameras">
-          <ul class=""><p id="title">Cameras</p>
-            <li>Interchangeable-lens Cameras</li>
-            <li>Lenses</li>
-            <li>Compact Cameras</li>
-            <li>Lens-Style Cameras</li>
-          </ul></br>
-          <p id="viewAll">View All</p>
-          </div>
-        
-          <div class="mobileDevices">
-          <ul class=""><p id="title">Mobile Devices</p>
-            <li>Cell Phones</li>
-            <li>Tablets</li>
-            <li>Wearable Technology</li>
-            <li>Digital Paper</li>
-          </ul></br>
-          <p id="viewAll">View All</p>
-          </div>
-              <!-- <div class="ELECdropDownBottom">  -->
-              <div class="videoCamera">
-               <ul class=""><p id="title">Video Cameras</p>
-                 <li>Camcorders</li>
-                 <li>Action Cameras</li>
-                 <li>Music Video Recorders</li>
-                 <li>Profesional Camcorders</li>
-               </ul></br>
+      <div class="ELECdropDownContainer" ng-show="showElectronics" ng-mouseleave="showElectronics = false">
+        <div class="ELECdropDownTop">
+              <div class="televisionshometheaters">
+                <ul class=""><p id="title">Televisions</p>
+                  <li>Televisions</li>
+                  <li>Home Theater & Sound Bars</li>
+                  <li>Projectors</li>
+                  <li>Blu-ray & DVD Players</li>
+                </ul></br>
                   <p id="viewAll">View All</p>
+                </div>
+
+                <div class="audio">
+                  <ul class=""><p id="title">Audio</p>
+                    <li>Headphones</li>
+                    <li>MP3 Players</li>
+                    <li>Wireless Speakers</li>
+                    <li>High-Resolution Audio</li>
+                  </ul></br>
+                  <p id="viewAll">View All</p>
+                </div>
+            
+                <div class="cameras">
+                <ul class=""><p id="title">Cameras</p>
+                  <li>Interchangeable-lens Cameras</li>
+                  <li>Lenses</li>
+                  <li>Compact Cameras</li>
+                  <li>Lens-Style Cameras</li>
+                </ul></br>
+                <p id="viewAll">View All</p>
+                </div>
+              
+                <div class="mobileDevices">
+                <ul class=""><p id="title">Mobile Devices</p>
+                  <li>Cell Phones</li>
+                  <li>Tablets</li>
+                  <li>Wearable Technology</li>
+                  <li>Digital Paper</li>
+                </ul></br>
+                <p id="viewAll">View All</p>
+                </div>
               </div>
-              <div class="car">
-               <ul class=""><p id="title">Car and Marine</p>
-                 <li>In-Car Recievers & Players</li>
-                 <li>In-Car Speakers & Ampliphiers</li>
-                 <li>Marine Audio</li>
-                 <li>Automotive OEM Audio</li>
-               </ul>  </br>
-                  <p id="viewAll">View All</p>              
-              </div>
-              <div class="energystorage">
-               <ul class=""><p id="title">Energy, Storage & Cables</p>
-                 <li>Batteries</li>
-                 <li>Memory Cards & Flash Drives</li>
-                 <li>Cables</li>
-               </ul></br>
-                  <p id="viewAll">View All</p>                
-              </div>
-              <!-- </div>  -->
+
+            </br>
+                <div class="ELECdropDownBottom"> 
+                  <div class="videoCamera">
+                  <ul class=""><p id="title">Video Cameras</p>
+                    <li>Camcorders</li>
+                    <li>Action Cameras</li>
+                    <li>Music Video Recorders</li>
+                    <li>Profesional Camcorders</li>
+                  </ul></br>
+                      <p id="viewAll">View All</p>
+                  </div>
+                  <div class="car">
+                  <ul class=""><p id="title">Car and Marine</p>
+                    <li>In-Car Recievers & Players</li>
+                    <li>In-Car Speakers & Ampliphiers</li>
+                    <li>Marine Audio</li>
+                    <li>Automotive OEM Audio</li>
+                  </ul>  </br>
+                      <p id="viewAll">View All</p>              
+                  </div>
+                  <div class="energystorage">
+                  <ul class=""><p id="title">Energy, Storage & Cables</p>
+                    <li>Batteries</li>
+                    <li>Memory Cards & Flash Drives</li>
+                    <li>Cables</li>
+                  </ul></br>
+                      <p id="viewAll">View All</p>                
+                  </div>
+            </div>
       </div>
 
-      <!-- <h1>{{count}}</h1> -->
+      
 
 
                 
        
 
      </div>
-     <div class="entertainmentDropMenu" ng-show="showEntertainment">
+     <div class="entertainmentDropMenu" ng-show="showEntertainment" ng-mouseleave="showEntertainment = false">
        <div class="entertainmentLeft">
-         <span class="videoGames">Video Games</span>
-         <span class="movies">Movies & TV Shows</span>
-         <span class="music">Music</span>
+         <span class="videoGames">Video Games<img id="funImage" src="images/videogames.png"></img></span>
+         <span class="movies">Movies & TV Shows<img id="funImage" src="images/movies.png"></img></span>
+         <span class="music">Music<img id="funImage" src="images/music.png"></img></span>
        </div>
-        <div class="phone+tabletApps"> 
-          Phone and Tablet Apps</br> The best of what Sony has to offer on iOS or Android. </br><p>Download our Apps</p>
+        <div class="entertainmentRight"> 
+          <p>Phone and Tablet Apps</br> The best of what Sony has to offer on iOS or Android. </p></br><p>Download our Apps</p>
         </div>
      </div>
-     <div class="supportDropMenu" nng-show="showSupport">
-       <span class="support">Support
-          <div class="supportBox">3</div>
+     <div class="supportDropMenu" ng-show="showSupport" ng-mouseleave="showSupport = false">
+       <h2 class="support">Support
+          <img src="images/support.jpg"></img>
 
-      </span>
+      </h2>
       <span class="register">Register a Product
-          <div class="registerBox">3</div>
+          <img src="images/register-a-product.png">
 
       </span>
       <span class="community">Community
-          <div class="comminutyBox">3</div>
+          ><img src="images/community.png">
 
       </span>
      </div>
