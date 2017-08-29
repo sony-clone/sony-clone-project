@@ -2,8 +2,8 @@
 
 angular.module("sonyApp", ['ui.router']).config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
 
-    console.log('lugia left');
-    $urlRouterProvider.otherwise('/');
+    console.log(' Didnt catch TTar');
+    $urlRouterProvider.otherwise('home');
 
     $stateProvider.state('home', {
         templateUrl: './views/home.html',
@@ -14,11 +14,6 @@ angular.module("sonyApp", ['ui.router']).config(["$stateProvider", "$urlRouterPr
         url: '/electronics/:id'
     });
 }]);
-"use strict";
-'use strict';
-
-angular.module('sonyApp').service('homeService', ["$http", function ($http) {}]);
-"use strict";
 "use strict";
 'use strict';
 
@@ -50,4 +45,9 @@ angular.module("sonyApp").controller('single-productsCtrl', ["$scope", "$statePa
         //         }
     };
 }]);
+"use strict";
+'use strict';
+
+angular.module('sonyApp').service('homeService', ["$http", function ($http) {}]);
+"use strict";
 //# sourceMappingURL=maps/bundle.js.map
