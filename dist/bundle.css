@@ -71,9 +71,22 @@ table {
   letter-spacing: 1.4px;
   margin-left: 12.5%; }
 
-.main-home-container {
+.home-banner {
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: 300px;
+  background-image: url("/images/home-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 300px;
+  background-color: #ACACB6; }
+
+.main-home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   background-color: white; }
   .main-home-container .home-container {
@@ -728,7 +741,6 @@ table {
         width: 100%;
         height: 210px; }
         .products-container .individual-products-container .individual-products-top .ip-top-middle img {
-          width: 90%;
           height: 190px; }
       .products-container .individual-products-container .individual-products-top .ip-top-bottom {
         display: flex;
@@ -950,7 +962,11 @@ table {
   justify-content: space-between;
   width: 80%;
   height: 400px;
-  margin: auto; }
+  margin: auto;
+  position: absolute;
+  top: 58px;
+  z-index: 5;
+  background-color: white; }
 
 ul {
   list-style-image: url("images/rightcheverons.png");

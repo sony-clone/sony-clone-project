@@ -1,8 +1,8 @@
 angular.module("sonyApp", ['ui.router'])
     .config(function($stateProvider, $urlRouterProvider) {
 
-console.log('lugia left')
-        $urlRouterProvider.otherwise('/');
+console.log(' Didnt catch TTar')
+        $urlRouterProvider.otherwise('home');
 
         $stateProvider
             .state('home', {

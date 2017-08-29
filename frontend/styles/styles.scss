@@ -113,6 +113,10 @@ border-top: 5px solid grey;
   width: 80%;
   height: 400px;  
   margin: auto;
+  position: absolute;
+  top: 58px;
+  z-index: 5;
+  background-color: white;
 }
 ul {
    list-style-image: url('images/rightcheverons.png'); 
@@ -254,7 +258,12 @@ ul {
   color: blue;
   margin-bottom: 15px;
   width: 100px;
+
+
 }
+
+
+
 .footer {
   width: 100%;
   height: 510px;
