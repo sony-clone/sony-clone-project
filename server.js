@@ -4,7 +4,7 @@ const express = require('express'),
 const config = require('./config');
 const app = express();
 const PORT = 80;
-console.log('massiveStuff', config.POSTGRES)
+// console.log('massiveStuff', config.POSTGRES)
 app.use(bodyParser.json())
 app.use(express.static("./dist"))
 massive(config.POSTGRES).then( db => {
@@ -12,7 +12,7 @@ massive(config.POSTGRES).then( db => {
 
 const mainCtrl = require('./mainCtrl');
 app.use('/',function(req, res, next){
-  console.log('hitting api from  ', req.originalUrl)
+  // console.log('hitting api from  ', req.originalUrl)
   next()
 })
 //---users-----
@@ -39,9 +39,9 @@ app.get('/api/camcorders', mainCtrl.getCamcorders);
 
 })
 .catch(function(error) {
-  console.log(error);
+  // console.log(error);
   })
 
 app.listen(PORT, () => {
-  console.log('Listening on port: ', PORT);
+  // console.log('Listening on port: ', PORT);
 });
