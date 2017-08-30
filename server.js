@@ -11,7 +11,10 @@ massive(config.POSTGRES).then( db => {
   app.set('db', db);
 
 const mainCtrl = require('./mainCtrl');
-
+app.use('/',function(req, res, next){
+  console.log('hitting api from  ', req.originalUrl)
+  next()
+})
 //---users-----
 app.get('/api/users', mainCtrl.getUsers);
 

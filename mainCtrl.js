@@ -1,6 +1,7 @@
 module.exports = {
 
      getTvs: function(req, res) {
+         console.log('getTvs')
          const db = req.app.get('db');
          db.get_all_tvs().then(function(response) {
          res.status(200).send(response)
