@@ -4,7 +4,7 @@ const express = require('express'),
 const config = require('./config');
 const app = express();
 const PORT = 80;
-
+console.log('massiveStuff', config.POSTGRES)
 app.use(bodyParser.json())
 app.use(express.static("./dist"))
 massive(config.POSTGRES).then( db => {
