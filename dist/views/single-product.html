@@ -1,13 +1,13 @@
 
-    <div class="banner">
+    <div class="banner" style="background-image: url({{bannerImg}});">
       <div class="banner-text-1">
-        <p>TELEVISIONS & HOME THEATER</p>
+        <p>{{top}}</p>
       </div>
       <div class="banner-text-2">
-      <p>TELEVISIONS</p>
+      <p>{{title}}</p>
       </div>
       <div class="banner-text-3">
-        <p>Our most beautiful picture ever</p>
+        <p>{{bottom}}</p>
         </div>
     </div>
     <div class="mini">
@@ -40,13 +40,13 @@
       </div>
     </div>
     <div class="products-container">
-      <div class="individual-products-container">
+      <div class="individual-products-container" ng-repeat="product in products">
         <div class="individual-products-top">
           <div class="ip-top-top">
             <img ng-src="../images/4k-hdr.png" alt="">
           </div>
           <div class="ip-top-middle">
-             <img src="../images/tv-1.jpg" alt="">
+             <img src="../images/{{product.image}}" alt="">
           </div>
           <div class="ip-top-bottom">
             <i class="fa fa-heart"  aria-hidden="true"></i>
@@ -54,7 +54,7 @@
         </div>
         <div class="individual-products-bottom">
           <div class="ip-bottom-a">
-            <h2>Z9D | LED | 4K Ultra HD | High Dynamic Range (HDR) | Smart TV(Android TV )</h2>
+            <h2>{{product.model}}{{product.product}}</h2>
           </div>
           <div class="ip-bottom-b">
               <i class="fa fa-star" aria-hidden="true"></i>
@@ -63,12 +63,12 @@
               <i class="fa fa-star" aria-hidden="true"></i>
               <i class="fa fa-star" aria-hidden="true"></i>
           </div>
-          <div class="ip-bottom-c">
+          <div class="ip-bottom-c" ng-repeat="desc in product.description">
             <ul>
-              <li><h4>4K HDR Processor X1 Extreme for ultimate realism</h4></li>
-              <li><h4>Unprecedented contrast with Backlight Master Drive</h4></li>
-              <li><h4>Amazing contrast with X-tended Dynamic Range PRO</h4></li>
-              <li><h4>Wide color gamut with TRILUMINOS Display</h4></li>
+              <li><h4>{{desc}}</h4></li>
+              <!-- <li><h4>{{product.description[1]}}</h4></li>
+              <li><h4>{{product.description[2]}}</h4></li>
+              <li><h4>{{product.description[3]}}</h4></li> -->
             </ul>
           </div>
           <div class="ip-bottom-d">
@@ -87,7 +87,7 @@
               <button>100" class (99.5" diag)</button>
           </div>
           <div class="ip-bottom-i">
-              <h3>$4,499.99</h3>
+              <h3>${{product.price}}</h3>
           </div>
           <div class="ip-bottom-j">
               <h4>More product information</h4>
