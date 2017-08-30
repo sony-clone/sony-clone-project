@@ -38,6 +38,10 @@ app.get('/api/camcorders', mainCtrl.getCamcorders);
 
 
 })
+.catch(function(error) {
+  console.log(error);
+  res.status(500).send(error)
+  })
 
 app.listen(PORT, () => {
   console.log('Listening on port: ', PORT);
