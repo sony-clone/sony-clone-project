@@ -1,9 +1,9 @@
 angular.module("sonyApp")
 .controller('single-productsCtrl', function($scope, $stateParams, singleService) {
 
-console.log("testing");
+// console.log("testing");
     $scope.checkParams = function() {
-        console.log('log');
+        // console.log('log');
         singleService.getProducts($stateParams.id)
             .then( function(response){
                 $scope.products = response;
@@ -15,7 +15,7 @@ console.log("testing");
     
     switch($stateParams.id){
         case "television":
-        console.log("ANYTING")
+        // console.log("ANYTING")
             $scope.title = 'Televisions';
             $scope.bannerImg = './images/tv-banner.png';
             $scope.top = 'TELEVISIONS & HOME THEATER';

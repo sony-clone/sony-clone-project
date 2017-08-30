@@ -1,7 +1,7 @@
 angular.module("sonyApp", ['ui.router'])
     .config(function($stateProvider, $urlRouterProvider) {
 
-console.log(' Didnt catch TTar')
+// console.log(' Didnt catch TTar')
         $urlRouterProvider.otherwise('home');
 
         $stateProvider

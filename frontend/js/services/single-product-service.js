@@ -6,7 +6,7 @@ angular.module('sonyApp')
         let url = '';
         switch(id){
             case "television":
-            console.log("ANYTING")
+            // console.log("ANYTING")
                 url = '/api/tvs';
                 break;
             case "hometheaters":
@@ -40,7 +40,7 @@ angular.module('sonyApp')
             url: url
         })
             .then(function(response){
-                console.log(response.data)
+                // console.log(response.data)
                 
                 let products = [];
                 /*
@@ -79,7 +79,7 @@ angular.module('sonyApp')
                         products[products.length-1].description = [products[products.length-1].description]
                     }
                 }
-console.log(products)
+// console.log(products)
                 return products;
             })
             .catch(function(error){
