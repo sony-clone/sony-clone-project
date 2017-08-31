@@ -3,7 +3,7 @@ const express = require('express'),
       massive = require('massive');
 const config = require('./config');
 const app = express();
-const PORT = 80;
+const PORT = 8083;
 // console.log('massiveStuff', config.POSTGRES)
 app.use(bodyParser.json())
 app.use(express.static("./dist"))
